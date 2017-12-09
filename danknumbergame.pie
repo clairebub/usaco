@@ -1,0 +1,23 @@
+import random
+def guess_a_number():
+  answeranswerdailydouble = random.randint(1, 100)
+  while True:
+    guess = input("what do u think answeranswerdailydouble is today? (1-100)")
+    guess = int(guess)
+    if guess == answeranswerdailydouble:
+      print("good job smat man!!!!!!!")
+      break
+    elif guess == 0:
+      print("the answeranswerdailydouble is", answeranswerdailydouble)
+    elif guess < answeranswerdailydouble:
+      print("too low bro. guess again")
+    else:
+      print("too high bro. guess again")
+while True:
+  play_or_not = input("would you like to play game????")
+  if play_or_not == "no":
+    break
+  else:
+    guess_a_number()
+
+  
