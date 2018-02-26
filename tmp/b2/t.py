@@ -15,14 +15,15 @@ for i in range(count):
         cover_dict[start] = end
     cover_list.append([start, end])
 #print("cover_list", cover_list)
+
+# sort them by start time
 sorted_start_times = sorted(cover_dict)
 sorted_cover_time = [[start, cover_dict[start]] for start in sorted_start_times]
-#print("sorted_cover_time", sorted_cover_time)
 
-# now merge the sorted cover time
-def merge_cover_time(interval_list):
-    merged_cover_time = [interval_list[0]]
-    for y in interval_list[1:]:
+# now merge and calc the covered time
+def get_cover_time(interval_list):
+    merged_cover_time = [interval_list.pop(0)]
+    for y in interval_list:
         # only need to deal with the last in the merged_cover_time
         x = merged_cover_time.pop(-1)
         # now merge x and y
@@ -38,36 +39,23 @@ def merge_cover_time(interval_list):
             merged_cover_time.append([x[0], y[1]])
         else:
             raise Error("what?", x, y)
-    return merged_cover_time
+#    print("merged_cover_time", merged_cover_time)
 
-merge_sorted_cover_time = merge_cover_time(sorted_cover_time)
-#print("merge_sorted_cover_time", merge_sorted_cover_time)
-
-def get_total_time(sorted_merged_list):
     total_time = 0
-    for x in sorted_merged_list:
-        total_time += x[1] - x[0]
+    for x in merged_cover_time:
+        total_time += (x[1] - x[0])
+#    print("total_time", total_time)
     return total_time
-
-def take_one_out_max_time(foo):
-    max_time = None
-#    print("foo", foo)
-    for i in range(len(foo)-1):
-        head = foo[:i]
-        tail = foo[i+1:]
-        bar = merge_sorted_cover_time = merge_cover_time(head + tail)
-        total_time = get_total_time(bar)
-        if max_time is None or total_time > max_time:
-            max_time = total_time
-    return max_time
 
 answer = None
 if same_start:
-    answer = get_total_time(merge_sorted_cover_time)
-#    print("same start", answer)
+    answer = get_cover_time(sorted_cover_time)
 else:
-    answer = take_one_out_max_time(sorted_cover_time)
-#    print("normal", answer)
-
+    for i in range(len(sorted_cover_time)):
+        t = sorted_cover_time[:]
+        t.pop(i)
+        t_time = get_cover_time(t)
+        if answer is None or t_time > answer:
+            answer = t_time
 print("answer", answer)
 print(answer, file=fout)
