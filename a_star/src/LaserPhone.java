@@ -8,6 +8,7 @@ public class LaserPhone {
     static int H = -1;
 
     static void run() throws Exception {
+        System.out.println("haha");
         Scanner fin = new Scanner(new File("laserphone.in"));
         String line = fin.nextLine();
         StringTokenizer st = new StringTokenizer(line);
