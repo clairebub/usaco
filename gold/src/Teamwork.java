@@ -5,10 +5,11 @@ public class Teamwork {
     static int N;
     static int K;
     static int[] values;
-    static int[] max_values;
+    static int[] max_values_sum;
 
     public static void main(String[] args) throws Exception {
-        Scanner fin = new Scanner(new File("teamwork.in"));
+//        Scanner fin = new Scanner(new File("teamwork.in"));
+        Scanner fin = new Scanner(new File("teamwork_gold_dec18/9.in"));
         String line = fin.nextLine();
         StringTokenizer st = new StringTokenizer(line);
         N = Integer.parseInt(st.nextToken());
@@ -19,59 +20,34 @@ public class Teamwork {
             st = new StringTokenizer(line);
             values[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println("values: " + Arrays.toString(values));
-        max_values = new int[N];
-        for (int i = 0; i < N; i++) {
-            max_values[i] = -1;
-        }
-        int v = max_value_dp(0);
-        System.out.println("max values: " + Arrays.toString(max_values));
-        PrintWriter fout = new PrintWriter(new File("teamwork.out"));
-        fout.println(v);
-        fout.close();
-    }
-
-    public static int max_value_dp(int start_index) {
-        // max_value is the max of the follow three situations
-        // 1. single member (start_index) + max_value_dp (start_index + 1)
-        // 2. double member (start_index, start_index + 1) + max_value_dp(start_index + 2)
-        // 3. triple member (start_index, start_index+2, start_index_2) + max_value_dp(stat_index_3)
-
-        // so how does the recursion end?
-        // the recursion ends if there are 1 left, 2 left and 3 left, basically up to K left
-        // which is to say start_index >= N - K
-        if (max_values[start_index] > 0) {
-            return max_values[start_index];
-        }
-        if (start_index >= N - K) {
-            // if it the values has been computed, don't do it again
-            // otherwise, calc and set the value for the whole K
-            int max_e = values[N-1];
-            max_values[N-1] = max_e;
-            for (int j = 1; j < K; j++) {
-                int i = N - 1 - j;
-                if (values[i] > max_e) {
-                    max_e = values[i];
-                }
-                max_values[i] = max_e * (j + 1);
-            }
-            return max_values[start_index];
-        }
-
-        int max_element = values[start_index];
-        int max_v = values[start_index] + max_value_dp(start_index+1);
+        //System.out.println("values: " + Arrays.toString(values));
+        // max_values[i] contains the answer for the first ith cows.
+        // the fist K cows are easy, you know how to calculate
+        max_values_sum = new int[N];
+        max_values_sum[0] = values[0];
+        int max_v = values[0];
         for (int i = 1; i < K; i++) {
-            if (values[start_index+i] > max_element) {
-                max_element = values[start_index+i];
-            }
-            int v1 = max_element * i;
-            int v2 = max_value_dp(start_index + i);
-            int v = v1 + v2;
-            if (v > max_v) {
-                max_v = v;
+            max_v = Math.max(max_v, values[i]);
+            max_values_sum[i] = (i+1) * max_v;
+        }
+        // now add one at a time
+        for (int i = K; i < N; i++) {
+            // i is the last element
+            // j is the size of the last group
+            for (int j = 1; j <= K; j++) {
+                if (j == 1) {
+                    max_v = values[i];
+                    max_values_sum[i] = max_values_sum[i-1] + max_v;
+                } else {
+                    // max_v is the maximum value of single element for the (j) elements ending at ith
+                    max_v = Math.max(max_v, values[i - j + 1]);
+                    // v1 is the value when the last group has j elements
+                    int v1 = max_values_sum[i - j] + max_v * j;
+                    max_values_sum[i] = Math.max(max_values_sum[i], v1);
+                }
             }
         }
-        max_values[start_index] = max_v;
-        return max_values[start_index];
+        //System.out.println("values: " + Arrays.toString(max_values_sum));
+        System.out.println("values: " + max_values_sum[N-1]);
     }
 }
