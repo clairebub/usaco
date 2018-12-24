@@ -8,8 +8,9 @@ public class Teamwork {
     static int[] max_values_sum;
 
     public static void main(String[] args) throws Exception {
+        long start_time = System.currentTimeMillis();
 //        Scanner fin = new Scanner(new File("teamwork.in"));
-        Scanner fin = new Scanner(new File("teamwork_gold_dec18/9.in"));
+        Scanner fin = new Scanner(new File("teamwork_gold_dec18/7.in"));
         String line = fin.nextLine();
         StringTokenizer st = new StringTokenizer(line);
         N = Integer.parseInt(st.nextToken());
@@ -49,5 +50,7 @@ public class Teamwork {
         }
         //System.out.println("values: " + Arrays.toString(max_values_sum));
         System.out.println("values: " + max_values_sum[N-1]);
+        long end_time = System.currentTimeMillis();
+        System.out.println("time: " + (end_time - start_time) + " ms");
     }
 }
