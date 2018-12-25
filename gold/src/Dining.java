@@ -40,134 +40,99 @@ public class Dining {
         }
     }
 
-    static int N, M, K;
-
-    static HashMap<Integer, Integer> hayVals = new HashMap<>();
-    static HashMap<Integer, HashSet<Integer>> neighbors = new HashMap<>();
-    static HashMap<Pair, Integer> trails = new HashMap<>();
-
     public static void main(String[] args) throws Exception {
-        long start_time = System.currentTimeMillis();
+        int N, M, K;
+        HashMap<Integer, HashSet<Integer>> neighbors = new HashMap<>();
+        HashMap<Pair, Integer> edges = new HashMap<>();
+        HashMap<Integer, Integer> hays = new HashMap<>();
+
         Scanner fin = new Scanner(new File("dining_gold_dec18/10.in"));
         StringTokenizer st = new StringTokenizer(fin.nextLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
 
-        Scanner fin2 = new Scanner(new File("dining_gold_dec18/10.out"));
-        ArrayList<Integer> answers = new ArrayList<>();
-        for (int i = 1; i < N; i++) {
-            answers.add(fin2.nextInt());
+        // Read in the graph, which is represented by two hash maps: one is given a node, get a
+        // set of its neighbors; the other is given an edge, get its weight.
+        for (int i = 1; i <= N; i++) {
+            neighbors.put(i, new HashSet<>());
         }
-        // init the graph with two hashmaps: one is a lookup from a node to a list of neighbors, another
-        // is a pair to the edge weight
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(fin.nextLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            int cost = Integer.parseInt(st.nextToken());
-            trails.put(new Pair(a, b), cost);
-            trails.put(new Pair(b, a), cost);
-            HashSet n = neighbors.containsKey(a) ? neighbors.get(a) : new HashSet();
-            n.add(b);
-            neighbors.put(a, n);
-            n = neighbors.containsKey(b) ? neighbors.get(b) : new HashSet();
-            n.add(a);
-            neighbors.put(b, n);
+            int w = Integer.parseInt(st.nextToken());
+            edges.put(new Pair(a, b), w);
+            edges.put(new Pair(b, a), w);
+            neighbors.get(a).add(b);
+            neighbors.get(b).add(a);
         }
-
+        // Read in the location of hays and their values
         for (int i = 0; i < K; i++) {
             st = new StringTokenizer(fin.nextLine());
             int h = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
-            hayVals.put(h, v);
+            hays.put(h, v);
         }
-//        System.out.println("hayVals: " + hayVals);
- //       System.out.println("neighbors: " + neighbors);
- //       System.out.println("trails: " + trails);
-        System.out.println("time: " + (System.currentTimeMillis() - start_time));
-        HashMap<Integer, Integer> dist = dijkstra2(N);
-        System.out.println("time 2: " + (System.currentTimeMillis() - start_time));
-//        System.out.println("dist from barn to pasture: " + dist);
+        // Get the optimal distance from barn to each pasture
+        HashMap<Integer, Integer> dist_from_barn = new HashMap<Integer, Integer>();
+        dist_from_barn.put(N, 0);
+        dijkstra(Arrays.asList(N), dist_from_barn, neighbors, edges);
 
-        // modify the graph to make the traversal start at H, with an initial distance
-        neighbors.put(N+1, new HashSet<>());
-        for (Integer p : hayVals.keySet()) {
-            neighbors.get(N+1).add(p);
-            Pair edge = new Pair(N+1, p);
-            trails.put(edge, dist.get(p) - hayVals.get(p));
+        // Optimal distance from barn to each pasture with one stop at the hays can be calculated
+        // as a sum of two segments: the first segment is the optimal distance from the barn to the
+        // hays; the second segment is the optimal distance from the hays to each pasture. It makes
+        // sense for cow to stop at the hays if the sum of these two segments minus the hay value is
+        // smaller than the optimal distance from barn to pasture calculated earlier.
+        // The way we calculate the sum of these two segments is as following: first use dijkstra to
+        // calculate the distance from barn to hays, then minus the hay's yumminess value. Then use the
+        // pastures with hays as the sources and the (distance - yumminess value) as their respective
+        // starting distance to calculate the distance to each pasture. These distance is the distance
+        // the cow would have travelled if it has first find the best path to go to a hay, eat it and
+        // then go to the barn, because the optimal distance of cow going from individual pasture to hay
+        // and then barn is the same as cow going from barn to hay and going to each pasture.
+        HashMap<Integer, Integer> dist_through_hay = new HashMap<>();
+        for (Integer h : hays.keySet()) {
+            dist_through_hay.put(h, dist_from_barn.get(h) - hays.get(h));
         }
-        // now it's like traversing the graph from each H, the distance marked on each node would
-        // be the distance from the node to the barn, keeping the minimum. If that distance is getting
-        // smaller, it means it cost less to visit the barn going through the barn.
-        HashMap<Integer, Integer> dist2 = dijkstra2(N+1);
-
+        dijkstra(new ArrayList(hays.keySet()), dist_through_hay, neighbors, edges);
 
         PrintWriter fout = new PrintWriter(new File("dining.out"));
         // PrintWriter fout = new PrintWriter(System.out);
         for (int i = 1; i < N; i++) {
-            int v = dist2.get(i) <= dist.get(i) ? 1 : 0;
+            int v = dist_through_hay.get(i) <= dist_from_barn.get(i) ? 1 : 0;
             fout.println(v);
-            if (v != answers.get(i-1)) {
-                System.out.println("****** wrong at " + i);
-                System.exit(1);
-            }
         }
         fout.close();
-        System.out.println("time 3: " + (System.currentTimeMillis() - start_time));
     }
 
-    /**
-     * THIS HAS A BUG. USE THE dijkstra2() function.
-     * Dijkstra algorith, given a source, mark each visited node with the minimum distance reachable.
-     * Return a hashmap of distances
+    // visit from the given sources, update reachable distance to dist.
+    // each source already has its distance in the dist parameter
+    static void dijkstra(
+            List<Integer> sources,
+            HashMap<Integer, Integer> dist,
+            HashMap<Integer, HashSet<Integer>> neighbors,
+            HashMap<Pair, Integer> edges) {
 
-    static HashMap<Integer, Integer> dijkstra(int source) {
-        // distance from source to the given node
-        HashMap<Integer, Integer> dist = new HashMap<>();
-        dist.put(source, 0);
-
-        ArrayList<Integer> toBeVisited = new ArrayList<>();
-        toBeVisited.add(source);
-
-        HashSet<Integer> visited = new HashSet<>();
-
-        while(!toBeVisited.isEmpty()) {
-            int visiting = toBeVisited.remove(0);
-            HashSet<Integer> n_list = neighbors.get(visiting);
-            for (int t : n_list) {
-                if (visited.contains(t)) {
-                    continue;
-                }
-                Pair edge = new Pair(visiting, t);
-                if (!dist.containsKey(t) || dist.get(t) > dist.get(visiting) + trails.get(edge)) {
-                    dist.put(t, dist.get(visiting) + trails.get(edge));
-                }
-                toBeVisited.add(t);
+        LinkedList<Integer> visited = new LinkedList<>();
+        /*
+        PriorityQueue<Integer> visited = new PriorityQueue<>(neighbors.size(), new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return dist.get(o1) - dist.get(o2);
             }
-            visited.add(visiting);
-        }
-        return dist;
-    }
-    */
-
-    static HashMap<Integer, Integer> dijkstra2(int source) {
-        HashMap<Integer, Integer> dist = new HashMap<>();
-        dist.put(source, 0);
-
-        LinkedList<Pair> visited = new LinkedList<>();
-        visited.add(new Pair(-1, source));
-        while(!visited.isEmpty()) {
-            Pair edge = visited.remove();
-            int b = edge.b; // the node just arrived
-            for (int t : neighbors.get(b)) {
-                Pair e2 = new Pair(b, t);
-                if (!dist.containsKey(t) || dist.get(t) > dist.get(b) + trails.get(e2)) {
-                    dist.put(t, dist.get(b) + trails.get(e2));
-                    visited.add(e2);
+        }); */
+        visited.addAll(sources);
+        while (!visited.isEmpty()) {
+            int v = visited.poll();
+            for (Integer t : neighbors.get(v)) {
+                Pair e = new Pair(v, t);
+                int w = edges.get(e);
+                if (!dist.containsKey(t) || dist.get(t) > dist.get(v) + w) {
+                    dist.put(t, dist.get(v) + w);
+                    visited.offer(t);
                 }
             }
         }
-        return dist;
     }
 }
