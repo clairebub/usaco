@@ -39,14 +39,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            <state relative-caret-position="339">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WrongDirections.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WrongDirections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wrongdirections.in" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wrongdirections.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,35 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Sort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MilkOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MilkOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MkMoney.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="53" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
+              <caret line="17" column="53" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1320">
-              <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+              <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/Dining2.java" />
         <option value="$PROJECT_DIR$/src/Dining.java" />
         <option value="$PROJECT_DIR$/src/Fristeam.java" />
+        <option value="$PROJECT_DIR$/src/WrongDirections.java" />
+        <option value="$PROJECT_DIR$/wrongdirections.in" />
       </list>
     </option>
   </component>
@@ -216,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fristeam">
+  <component name="RunManager" selected="Application.WrongDirections">
     <configuration name="Cowpatibility" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Cowpatibility" />
       <module name="gold" />
@@ -253,6 +252,10 @@
       <option name="MAIN_CLASS_NAME" value="Teamwork" />
       <module name="gold" />
     </configuration>
+    <configuration name="WrongDirections" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="WrongDirections" />
+      <module name="gold" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -275,6 +278,7 @@
       <item itemvalue="Application.Talent" />
       <item itemvalue="Application.MkMoney" />
       <item itemvalue="Application.Fristeam" />
+      <item itemvalue="Application.WrongDirections" />
       <item itemvalue="Application.Dining" />
       <item itemvalue="Application.Teamwork" />
       <item itemvalue="Application.Cowpatibility" />
@@ -305,12 +309,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1521739" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -355,8 +359,20 @@
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WrongDirections.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WrongDirections.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -443,7 +459,7 @@
     <entry file="file://$PROJECT_DIR$/src/MilkOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,7 +490,7 @@
     <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
-          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -484,7 +500,7 @@
     <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="53" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
+          <caret line="17" column="53" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -523,11 +539,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        <state relative-caret-position="339">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WrongDirections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wrongdirections.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
