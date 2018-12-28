@@ -8,6 +8,14 @@ import java.util.*;
  */
 public class Dining {
 
+    static class PointDistance {
+        final int p, d;
+        PointDistance(int p, int d) {
+            this.p = p;
+            this.d = d;
+        }
+    }
+
     static class Pair {
         int a, b;
 
@@ -103,6 +111,25 @@ public class Dining {
             fout.println(v);
         }
         fout.close();
+    }
+    
+    static void dij(
+            int source,
+            int source_distance,
+            int[] dist,
+            LinkedList<Integer>[] neighbors,
+            HashMap<Integer, Integer>[] edges) {
+        dist[source] = source_distance;
+        LinkedList<Integer> visited = new LinkedList<>();
+        visited.add(source);
+        while (!visited.isEmpty()) {
+            int v = visited.removeFirst();
+            for (int n : neighbors[v]) {
+                if (dist[n] > dist[v] + edges[v].get(n)) {
+                    dist[n] = dist[v] + edges[v].get(n);
+                }
+            }
+        }
     }
 
     // visit from the given sources, update reachable distance to dist.

@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dining.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dining.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+            <state relative-caret-position="94">
+              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#739#740#0" expanded="true" />
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MkMoney.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MkMoney.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
@@ -103,8 +103,8 @@
       <file leaf-file-name="Cowpatibility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="87" selection-start-line="87" selection-end-line="91" selection-end-column="26" />
+            <state relative-caret-position="1320">
+              <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,12 +134,12 @@
         <option value="$PROJECT_DIR$/src/Teamwork.java" />
         <option value="$PROJECT_DIR$/src/Cowpatibility.java" />
         <option value="$PROJECT_DIR$/teamwork_gold_dec18/sort.in" />
-        <option value="$PROJECT_DIR$/src/Dining.java" />
         <option value="$PROJECT_DIR$/src/Sort.java" />
         <option value="$PROJECT_DIR$/src/MilkOrder.java" />
         <option value="$PROJECT_DIR$/src/Talent.java" />
         <option value="$PROJECT_DIR$/mkmoney.in" />
         <option value="$PROJECT_DIR$/src/MkMoney.java" />
+        <option value="$PROJECT_DIR$/src/Dining.java" />
       </list>
     </option>
   </component>
@@ -271,12 +271,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -373,16 +373,6 @@
     <entry file="file://$PROJECT_DIR$/teamwork.out">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="87" selection-start-line="87" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sort.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -396,19 +386,6 @@
           <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#2906#2924#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,6 +437,29 @@
           <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#2906#2924#0" expanded="true" />
           </folding>
         </state>
       </provider>
