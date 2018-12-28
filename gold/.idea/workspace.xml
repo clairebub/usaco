@@ -15,14 +15,47 @@
       <file leaf-file-name="Dining.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Dining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state relative-caret-position="258">
+              <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#739#740#0" expanded="true" />
                 <element signature="e#784#785#0" expanded="true" />
                 <element signature="e#2906#2924#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dining2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dining2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fristeam.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fristeam.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -54,8 +87,8 @@
       <file leaf-file-name="MkMoney.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="17" column="53" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,18 +116,6 @@
                 <element signature="e#396#397#0" expanded="true" />
                 <element signature="e#1281#1282#0" expanded="true" />
                 <element signature="e#1362#1363#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Teamwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Teamwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,6 +160,9 @@
         <option value="$PROJECT_DIR$/src/Talent.java" />
         <option value="$PROJECT_DIR$/mkmoney.in" />
         <option value="$PROJECT_DIR$/src/MkMoney.java" />
+        <option value="$PROJECT_DIR$/fristeam.in" />
+        <option value="$PROJECT_DIR$/src/Fristeam.java" />
+        <option value="$PROJECT_DIR$/src/Dining2.java" />
         <option value="$PROJECT_DIR$/src/Dining.java" />
       </list>
     </option>
@@ -192,13 +216,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MkMoney">
+  <component name="RunManager" selected="Application.Dining">
     <configuration name="Cowpatibility" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Cowpatibility" />
       <module name="gold" />
     </configuration>
     <configuration name="Dining" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Dining" />
+      <module name="gold" />
+    </configuration>
+    <configuration name="Dining2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Dining2" />
+      <module name="gold" />
+    </configuration>
+    <configuration name="Fristeam" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Fristeam" />
       <module name="gold" />
     </configuration>
     <configuration name="MilkOrder" type="Application" factoryName="Application">
@@ -237,10 +269,12 @@
       <method />
     </configuration>
     <list>
+      <item itemvalue="Application.Dining2" />
       <item itemvalue="Application.Sort" />
       <item itemvalue="Application.MilkOrder" />
       <item itemvalue="Application.Talent" />
       <item itemvalue="Application.MkMoney" />
+      <item itemvalue="Application.Fristeam" />
       <item itemvalue="Application.Dining" />
       <item itemvalue="Application.Teamwork" />
       <item itemvalue="Application.Cowpatibility" />
@@ -271,12 +305,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -316,7 +350,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -431,16 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cowpatibility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -451,10 +475,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MkMoney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="53" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fristeam.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dining2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dining.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="258">
+          <caret line="111" column="34" selection-start-line="111" selection-start-column="34" selection-end-line="111" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#739#740#0" expanded="true" />

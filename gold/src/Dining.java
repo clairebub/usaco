@@ -53,7 +53,7 @@ public class Dining {
         HashMap<Pair, Integer> edges = new HashMap<>();
         HashMap<Integer, Integer> hays = new HashMap<>();
 
-        Scanner fin = new Scanner(new File("dining_gold_dec18/10.in"));
+        Scanner fin = new Scanner(new File("dining_gold_dec18/2.in"));
         StringTokenizer st = new StringTokenizer(fin.nextLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
@@ -109,27 +109,9 @@ public class Dining {
         for (int i = 1; i < N; i++) {
             int v = dist_through_hay.get(i) <= dist_from_barn.get(i) ? 1 : 0;
             fout.println(v);
+            System.out.println(v);
         }
         fout.close();
-    }
-    
-    static void dij(
-            int source,
-            int source_distance,
-            int[] dist,
-            LinkedList<Integer>[] neighbors,
-            HashMap<Integer, Integer>[] edges) {
-        dist[source] = source_distance;
-        LinkedList<Integer> visited = new LinkedList<>();
-        visited.add(source);
-        while (!visited.isEmpty()) {
-            int v = visited.removeFirst();
-            for (int n : neighbors[v]) {
-                if (dist[n] > dist[v] + edges[v].get(n)) {
-                    dist[n] = dist[v] + edges[v].get(n);
-                }
-            }
-        }
     }
 
     // visit from the given sources, update reachable distance to dist.
