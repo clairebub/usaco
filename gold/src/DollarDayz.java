@@ -4,12 +4,12 @@ import java.util.*;
 public class DollarDayz {
 
     static int N, K;
-    static int[][] answers;
+    static long[][] answers;
     public static void main(String[] args) throws Exception {
         Scanner fin = new Scanner(new File("dollardayz.in"));
         N = fin.nextInt();
         K = fin.nextInt();
-        answers = new int[N+1][K+1];
+        answers = new long[N+1][K+1];
         for (int i = 0; i <= N; i++) {
             for (int j = 0; j <= K; j++) {
                 answers[i][j] = -1;
@@ -19,14 +19,15 @@ public class DollarDayz {
         System.out.println(answers[N][K]);
     }
 
-    static int nk(int n, int k) {
+    static long nk(int n, int k) {
         if (k == 1) {
+            answers[n][k] = 1;
             return 1;
         }
         if (answers[n][k] >= 0) {
             return answers[n][k];
         }
-        int total = 0;
+        long total = 0;
         // buying k dollar-ed item i times
         for (int i = 0; n >= i*k; i++) {
             total += nk(n-i*k, k-1);
