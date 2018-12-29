@@ -27,18 +27,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dining2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dining2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,14 +72,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Xoinc.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Xoinc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Xoinc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="48">
+              <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cdgame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cdgame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cdgame.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cdgame.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -110,15 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fristeam.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fristeam.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -160,6 +160,8 @@
         <option value="$PROJECT_DIR$/src/Cowlpha.java" />
         <option value="$PROJECT_DIR$/xoins.in" />
         <option value="$PROJECT_DIR$/src/Xoinc.java" />
+        <option value="$PROJECT_DIR$/cdgame.in" />
+        <option value="$PROJECT_DIR$/src/Cdgame.java" />
       </list>
     </option>
   </component>
@@ -212,7 +214,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Xoinc">
+  <component name="RunManager" selected="Application.Cdgame">
+    <configuration name="Cdgame" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Cdgame" />
+      <module name="gold" />
+    </configuration>
     <configuration name="Cowlpha" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Cowlpha" />
       <module name="gold" />
@@ -277,6 +283,7 @@
       <method />
     </configuration>
     <list>
+      <item itemvalue="Application.Cdgame" />
       <item itemvalue="Application.Dining2" />
       <item itemvalue="Application.Sort" />
       <item itemvalue="Application.MilkOrder" />
@@ -316,7 +323,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -326,7 +333,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32919255" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -390,8 +397,38 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cdgame.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cdgame.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cdgame.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cdgame.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cdgame.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -609,8 +646,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Xoinc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+        <state relative-caret-position="48">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cdgame.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cdgame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
