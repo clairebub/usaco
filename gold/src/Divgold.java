@@ -3,29 +3,40 @@ import java.util.*;
 
 public class Divgold {
     static int N;
-    static int[] V;
-    static int[][] dp;
-    static int min_diff = Integer.MAX_VALUE;
-    static int min_diff_count = 0;
+    static int[] gold;
+    static int sum;
+    static int[] answer;
+    static boolean[] good;
+
     public static void main(String[] args) throws Exception {
         Scanner fin = new Scanner(new File("divgold.in"));
         N = fin.nextInt();
-        V = new int[N];
+        gold = new int[N];
         for(int i = 0; i < N; i++){
-            V[i] = fin.nextInt();
+            gold[i] = fin.nextInt();
+            sum += gold[i];
         }
-        //System.out.println(Arrays.toString(V));
-        System.out.println(div_gold(0, 0));
-    }
+        answer = new int[sum+1];
+        good = new boolean[sum+1];
+        for (int i = 0; i <= sum; i++) {
+            answer[i] = 0;
+            good[i] = false;
+        }
+        answer[0] = 1;
+        good[0] = true; good[sum] = true;
+        for (int i = 0; i < N; i++) {
+            int v = gold[i];
+            for (int j = sum / 2; j >= v; j--) {
+                answer[j] = (answer[j] + answer[j - v]) % 1000000;
+                if (good[j - v]) good[j] = true;
+            }
+        }
 
-    static int div_gold(int i, int diff) {
-        if (i == N - 1) {
-            int diff_1 = Math.abs(diff + V[i]);
-            int diff_2 = Math.abs(diff - V[i]);
-            return Math.min(diff_1, diff_2);
-        }
-        int diff_1 = Math.abs(div_gold(i + 1, diff + V[i]));
-        int diff_2 = Math.abs(div_gold(i + 1, diff - V[i]));
-        return Math.min(diff_1, diff_2);
+        int best = sum / 2;
+        for (best = sum / 2; !good[best]; best--) {}
+
+        System.out.println(Math.abs(best - (sum - best)));
+        System.out.println(answer[best]);
+
     }
 }
