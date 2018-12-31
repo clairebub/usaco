@@ -12,18 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Coldwater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Coldwater.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cheesetower.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cheesetower.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,14 +48,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bcl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bcl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bcl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="150">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Divgold.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Divgold.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="divgold.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/divgold.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -162,6 +171,8 @@
         <option value="$PROJECT_DIR$/fristeam.in" />
         <option value="$PROJECT_DIR$/src/Fristeam.java" />
         <option value="$PROJECT_DIR$/src/Bcl.java" />
+        <option value="$PROJECT_DIR$/divgold.in" />
+        <option value="$PROJECT_DIR$/src/Divgold.java" />
       </list>
     </option>
   </component>
@@ -214,10 +225,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bcl">
+  <component name="RunManager" selected="Application.Divgold">
     <configuration name="Bcl" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Bcl" />
       <module name="gold" />
+      <option name="VM_PARAMETERS" value="-Xms16m -Xmx32m" />
     </configuration>
     <configuration name="Bookshelf" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Bookshelf" />
@@ -252,6 +264,11 @@
     <configuration name="Dining2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Dining2" />
       <module name="gold" />
+    </configuration>
+    <configuration name="Divgold" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Divgold" />
+      <module name="gold" />
+      <option name="VM_PARAMETERS" value="-Xms16m -Xmx32m" />
     </configuration>
     <configuration name="DollarDayz" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="DollarDayz" />
@@ -319,6 +336,7 @@
       <item itemvalue="Application.MkMoney" />
       <item itemvalue="Application.Fristeam" />
       <item itemvalue="Application.Bcl" />
+      <item itemvalue="Application.Divgold" />
       <item itemvalue="Application.WrongDirections" />
       <item itemvalue="Application.Coldwater" />
       <item itemvalue="Application.Hayfeast" />
@@ -351,13 +369,13 @@
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32919255" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -487,7 +505,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Bcl.java</url>
-          <line>29</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -810,6 +828,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bcl.in">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/divgold.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bookshelf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -820,13 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bcl.in">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+    <entry file="file://$PROJECT_DIR$/src/Divgold.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="277">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

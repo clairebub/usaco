@@ -7,6 +7,7 @@ public class Bcl {
     static String[] answer;
 
     public static void main(String[] args) throws Exception {
+        long start_time = System.currentTimeMillis();
         Scanner fin = new Scanner(new File("bcl/bcl.1.in"));
         N = fin.nextInt();
         cl = new String[N];
@@ -24,9 +25,11 @@ public class Bcl {
             System.out.print(answer[i]);
         }
         System.out.println();
+        System.out.println(System.currentTimeMillis() - start_time);
 //        System.out.println(Arrays.toString(answer));
     }
     static void pick(int i_start, int i_end, int i_answer) {
+        System.out.println("hallo");
         if (i_answer > N-1 || i_start > i_end) {
             return;
         }
