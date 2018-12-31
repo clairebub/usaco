@@ -12,30 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Hayfeast.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Hayfeast.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DollarDayz.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DollarDayz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Coldwater.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Coldwater.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,15 +20,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dollardayz.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dollardayz.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -69,14 +36,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Bookshelf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-151">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bcl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fristeam.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fristeam.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -111,15 +111,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hayfeast.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hayfeast.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -148,10 +139,8 @@
         <option value="$PROJECT_DIR$/src/Talent.java" />
         <option value="$PROJECT_DIR$/mkmoney.in" />
         <option value="$PROJECT_DIR$/src/MkMoney.java" />
-        <option value="$PROJECT_DIR$/fristeam.in" />
         <option value="$PROJECT_DIR$/src/Dining2.java" />
         <option value="$PROJECT_DIR$/src/Dining.java" />
-        <option value="$PROJECT_DIR$/src/Fristeam.java" />
         <option value="$PROJECT_DIR$/src/WrongDirections.java" />
         <option value="$PROJECT_DIR$/cowlpha.in" />
         <option value="$PROJECT_DIR$/src/Cowlpha.java" />
@@ -170,6 +159,9 @@
         <option value="$PROJECT_DIR$/src/Cheesetower.java" />
         <option value="$PROJECT_DIR$/bookshelf.in" />
         <option value="$PROJECT_DIR$/src/Bookshelf.java" />
+        <option value="$PROJECT_DIR$/fristeam.in" />
+        <option value="$PROJECT_DIR$/src/Fristeam.java" />
+        <option value="$PROJECT_DIR$/src/Bcl.java" />
       </list>
     </option>
   </component>
@@ -222,7 +214,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bookshelf">
+  <component name="RunManager" selected="Application.Bcl">
+    <configuration name="Bcl" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Bcl" />
+      <module name="gold" />
+    </configuration>
     <configuration name="Bookshelf" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Bookshelf" />
       <module name="gold" />
@@ -265,6 +261,7 @@
     <configuration name="Fristeam" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Fristeam" />
       <module name="gold" />
+      <option name="VM_PARAMETERS" value="-Xms16m -Xmx32m" />
     </configuration>
     <configuration name="Hayfeast" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Hayfeast" />
@@ -321,6 +318,7 @@
       <item itemvalue="Application.Talent" />
       <item itemvalue="Application.MkMoney" />
       <item itemvalue="Application.Fristeam" />
+      <item itemvalue="Application.Bcl" />
       <item itemvalue="Application.WrongDirections" />
       <item itemvalue="Application.Coldwater" />
       <item itemvalue="Application.Hayfeast" />
@@ -487,8 +485,14 @@
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Bcl.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -617,23 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="53" selection-start-line="5" selection-start-column="7" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fristeam.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -806,10 +793,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fristeam.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bookshelf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bcl.in">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

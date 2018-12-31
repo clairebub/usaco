@@ -18,7 +18,7 @@ public class Fristeam {
             st = new StringTokenizer(fin.nextLine());
             R[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println(Arrays.toString(R));
+//        System.out.println(Arrays.toString(R));
         remainders = new int[N][F];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < F; j++) {
