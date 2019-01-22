@@ -19,6 +19,7 @@ public class Divgold {
         for (int i = 0; i <= N; i++) {
             Arrays.fill(answer[i], -1);
         }
+
         // best answer is to make a pile at sum/2, the next best is bigger by one, then by two
         // you can stop if you get a good one. we use dp and memoization to avoid re-computating
         // ways to get a pile of coins with a given value using the first i coins
@@ -27,6 +28,43 @@ public class Divgold {
             if (w > 0) {
                 System.out.println(Math.abs((sum - i) - i));
                 System.out.println(w);
+                break;
+            }
+        }
+
+        //
+        // another way for the solution, this time bottom up
+        //
+        // A hash map where key is the value of a pile, the value is number
+        // of ways to achieve it. We only need to get up to sum/2, because it's symmetrical to the other
+        // pile.
+        LinkedList<HashMap<Integer, Integer>> all_ways = new LinkedList<>();
+        HashMap<Integer, Integer> ways = new HashMap<>();
+        ways.put(0, 1);
+        ways.put(gold[0], 1);
+        all_ways.addLast(ways);
+        for (int i = 1; i < N; i++) {
+            HashMap<Integer, Integer> current_ways = new HashMap<>();
+            HashMap<Integer, Integer> prev_ways = all_ways.getLast();
+            for (int k : prev_ways.keySet()) {
+                int v1 = k;
+                if (!current_ways.containsKey(v1)) {
+                    current_ways.put(v1, 0);
+                }
+                current_ways.put(v1, current_ways.get(v1) + prev_ways.get(k));
+                int v2 = k + gold[i];
+                if (!current_ways.containsKey(v2)) {
+                    current_ways.put(v2, 0);
+                }
+                current_ways.put(v2, current_ways.get(v2) + prev_ways.get(k));
+            }
+            all_ways.addLast(current_ways);
+        }
+        int i = sum/2;
+        while (true) {
+            if (all_ways.getLast().containsKey(i)) {
+                System.out.println((sum - i) - i);
+                System.out.println(all_ways.getLast().get(i));
                 break;
             }
         }

@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cheesetower.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cheesetower.java">
+      <file leaf-file-name="Cowlpha.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cowlpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="-203">
+              <caret line="14" column="45" selection-start-line="8" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bookshelf.java">
+      <file leaf-file-name="Dining.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dining.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="215">
+              <caret line="108" selection-start-line="108" selection-end-line="109" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fristeam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Fristeam.java">
+      <file leaf-file-name="Poetry.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Poetry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="277">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bcl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+      <file leaf-file-name="Shortcut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Shortcut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state relative-caret-position="255">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,62 +60,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Divgold.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shortcut.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shortcut.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sleepy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sleepy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="51" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sleepy.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sleepy.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poetry.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/poetry.in">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dining2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dining2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="19" selection-start-line="19" selection-end-line="31" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Divgold.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Divgold.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
+            <state relative-caret-position="264">
+              <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="divgold.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/divgold.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fristeam.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fristeam.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookshelf.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bookshelf.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cdgame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cdgame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="16" selection-start-line="16" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cheesetower.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cheesetower.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -133,6 +136,7 @@
     <findStrings>
       <find>visited</find>
       <find>snip</find>
+      <find>System.out</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -149,7 +153,6 @@
         <option value="$PROJECT_DIR$/mkmoney.in" />
         <option value="$PROJECT_DIR$/src/MkMoney.java" />
         <option value="$PROJECT_DIR$/src/Dining2.java" />
-        <option value="$PROJECT_DIR$/src/Dining.java" />
         <option value="$PROJECT_DIR$/src/WrongDirections.java" />
         <option value="$PROJECT_DIR$/cowlpha.in" />
         <option value="$PROJECT_DIR$/src/Cowlpha.java" />
@@ -170,9 +173,16 @@
         <option value="$PROJECT_DIR$/src/Bookshelf.java" />
         <option value="$PROJECT_DIR$/fristeam.in" />
         <option value="$PROJECT_DIR$/src/Fristeam.java" />
-        <option value="$PROJECT_DIR$/src/Bcl.java" />
         <option value="$PROJECT_DIR$/divgold.in" />
         <option value="$PROJECT_DIR$/src/Divgold.java" />
+        <option value="$PROJECT_DIR$/src/Bcl.java" />
+        <option value="$PROJECT_DIR$/src/Dining.java" />
+        <option value="$PROJECT_DIR$/poetry.in" />
+        <option value="$PROJECT_DIR$/sleepy.in" />
+        <option value="$PROJECT_DIR$/src/Sleepy.java" />
+        <option value="$PROJECT_DIR$/src/shortcut.in" />
+        <option value="$PROJECT_DIR$/src/Shortcut.java" />
+        <option value="$PROJECT_DIR$/src/Poetry.java" />
       </list>
     </option>
   </component>
@@ -208,6 +218,9 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -225,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Divgold">
+  <component name="RunManager" selected="Application.Poetry">
     <configuration name="Bcl" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Bcl" />
       <module name="gold" />
@@ -292,6 +305,14 @@
       <option name="MAIN_CLASS_NAME" value="MkMoney" />
       <module name="gold" />
     </configuration>
+    <configuration name="Poetry" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Poetry" />
+      <module name="gold" />
+    </configuration>
+    <configuration name="Sleepy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Sleepy" />
+      <module name="gold" />
+    </configuration>
     <configuration name="Sort" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Sort" />
       <module name="gold" />
@@ -346,6 +367,8 @@
       <item itemvalue="Application.Cowlpha" />
       <item itemvalue="Application.Xoinc" />
       <item itemvalue="Application.Dining" />
+      <item itemvalue="Application.Poetry" />
+      <item itemvalue="Application.Sleepy" />
       <item itemvalue="Application.Teamwork" />
       <item itemvalue="Application.Cowpatibility" />
     </list>
@@ -504,13 +527,13 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Bcl.java</url>
-          <line>32</line>
+          <url>file://$PROJECT_DIR$/src/Poetry.java</url>
+          <line>61</line>
           <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="41" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -652,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cowlpha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xoinc.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -696,19 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="55" selection-start-line="55" selection-end-line="59" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#2906#2924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coldwater.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -720,16 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dining2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,40 +757,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Coldwater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cheesetower.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cheesetower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cdgame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="16" selection-start-line="16" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,20 +791,27 @@
     <entry file="file://$PROJECT_DIR$/bcl.in">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bcl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/divgold.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="1436" selection-start-line="1436" selection-end-line="1436" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bcl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,10 +825,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cdgame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cheesetower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coldwater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cowlpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="14" column="45" selection-start-line="8" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Divgold.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
+        <state relative-caret-position="264">
+          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="108" selection-start-line="108" selection-end-line="109" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poetry.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sleepy.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sleepy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcut.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dining2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="19" selection-start-line="19" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shortcut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Poetry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

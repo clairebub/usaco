@@ -48,6 +48,8 @@ public class Dining {
     }
 
     public static void main(String[] args) throws Exception {
+        System.out.println(10 & -10);
+        System.exit(1);
         int N, M, K;
         HashMap<Integer, HashSet<Integer>> neighbors = new HashMap<>();
         HashMap<Pair, Integer> edges = new HashMap<>();
