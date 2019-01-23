@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Bcl {
+
     static int N;
     static String[] cl;
     static String[] answer;
