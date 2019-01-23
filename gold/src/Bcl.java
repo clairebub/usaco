@@ -20,7 +20,7 @@ public class Bcl {
         int i_end = N-1;
         int i_answer = 0;
 
-//        System.out.println(Arrays.toString(cl));
+        System.out.println("cl: " + Arrays.toString(cl));
         pick(0, N-1, 0);
         for (int i = 0; i < N; i++) {
             System.out.print(answer[i]);
@@ -30,7 +30,6 @@ public class Bcl {
 //        System.out.println(Arrays.toString(answer));
     }
     static void pick(int i_start, int i_end, int i_answer) {
-        System.out.println("hallo");
         if (i_answer > N-1 || i_start > i_end) {
             return;
         }

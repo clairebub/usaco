@@ -1,7 +1,6 @@
 #.DS_Store
 out
 .idea
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-**/*.xml
+gold/.idea/workspace.xml
+gold/.idea/tasks.xml
 *.iml
