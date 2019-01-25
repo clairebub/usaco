@@ -5,7 +5,7 @@ public class Poetry {
     static int[] dp;
     public static void main(String[] args) throws Exception {
         int N_words, M_lines, K_syllables;
-        Scanner fin = new Scanner(new File("poetry.in"));
+        Scanner fin = new Scanner(new File("poetry_gold_jan19/2.in"));
         StringTokenizer st = new StringTokenizer(fin.nextLine());
         N_words = Integer.parseInt(st.nextToken());
         M_lines = Integer.parseInt(st.nextToken());
@@ -78,8 +78,8 @@ public class Poetry {
         }
 
         //
-        PrintWriter fout = new PrintWriter(new File("poetry.out"));
-        //PrintWriter fout = new PrintWriter(System.out);
+        //PrintWriter fout = new PrintWriter(new File("poetry.out"));
+        PrintWriter fout = new PrintWriter(System.out);
      //   fout.println(String.format("N=%d, M=%d, K=%d", N_words, M_lines, K_syllables));
      //   fout.println(Arrays.toString(word_syllables));
      //   fout.println(Arrays.toString(word_rhymes));
