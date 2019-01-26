@@ -1,4 +1,8 @@
-#.DS_Store
+.DS_Store
+xcuserdata
+a.out
+a.out.*
+*.class
 out
 .idea
 gold/.idea/workspace.xml
