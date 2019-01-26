@@ -9,9 +9,9 @@ import java.util.*;
  */
 public class Dining2 {
     public static void main(String[] args) throws Exception {
-
+        long start_time = System.currentTimeMillis();
         int N, M, K;
-        Scanner fin = new Scanner(new File("dining_gold_dec18/2.in"));
+        Scanner fin = new Scanner(new File("/tmp/10.in"));
         StringTokenizer st = new StringTokenizer(fin.nextLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
@@ -62,14 +62,15 @@ public class Dining2 {
             dijkstra(h, starting_distance_at_this_hay, distance_through_hays, edges);
         }
 
-        PrintWriter fout = new PrintWriter(new File("dining.out"));
+        PrintWriter fout = new PrintWriter(new File("/tmp/dining.out"));
         // PrintWriter fout = new PrintWriter(System.out);
         for (int i = 1; i < N; i++) {
             int v = distance_through_hays[i] <= distance_from_barn[i] ? 1 : 0;
-            System.out.println(v);
             fout.println(v);
         }
         fout.close();
+        long end_time = System.currentTimeMillis();
+        System.out.println("time=" + (end_time-start_time) + " ms");
     }
 
     static void dijkstra(
