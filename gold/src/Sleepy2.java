@@ -14,48 +14,48 @@ public class Sleepy2 {
   static void run(int ii) throws Exception {
     String fname = String.format("/tmp/sleepy_gold_jan19/%d.in", ii);
     BufferedReader fin = new BufferedReader(new FileReader(fname));
-    String line = fin.readLine();
-    StringTokenizer st = new StringTokenizer(line);
+
+    StringTokenizer st = new StringTokenizer(fin.readLine());
     int N = Integer.parseInt(st.nextToken());
 
+    st = new StringTokenizer(fin.readLine());
     ArrayList<Integer> unsorted = new ArrayList<>();
-    line = fin.readLine();
-    st = new StringTokenizer(line);
     for(int i = 0; i < N; i++){
       int x = Integer.parseInt(st.nextToken());
       unsorted.add(x);
     }
 
-    int index = N - 1;
-    int prev = unsorted.get(N-1);
-    boolean keepgoing = true;
-    while(index >= 0 && keepgoing){
-      index--;
-      if(unsorted.get(index) > prev){
-        keepgoing = false;
+    int start = N - 1;
+    while (start > 0) {
+      if (unsorted.get(start - 1) > unsorted.get(start)) {
+        break;
       }
-      prev = unsorted.get(index);
+      start--;
     }
 
     ArrayList<Integer> sorted = new ArrayList<>();
-    sorted.addAll(unsorted.subList(index + 1, N));
+    sorted.addAll(unsorted.subList(start, N));
 
     String f_outname = String.format("/tmp/sleepy_gold_jan19/s_%d.out", ii);
     PrintWriter fout = new PrintWriter(new File(f_outname));
-    int actualsize = unsorted.size() - sorted.size();
-    fout.println(actualsize);
+    int num_to_move = unsorted.size() - sorted.size();
+    fout.println(num_to_move);
+
     boolean is_first = true;
     int unsorted_start = 0;
-    while(actualsize > 0){
+
+    while (num_to_move > 0) {
       int next = unsorted.get(unsorted_start);
       unsorted_start++;
-      actualsize--;
+      num_to_move--;
+
       int insertindex = - Collections.binarySearch(sorted, next) - 1;
       sorted.add(insertindex, next);
+
       if (!is_first) {
         fout.print(" ");
       }
-      fout.print(actualsize + insertindex);
+      fout.print(num_to_move + insertindex);
       is_first = false;
     }
     fout.println();
