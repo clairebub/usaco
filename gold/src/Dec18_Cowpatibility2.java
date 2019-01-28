@@ -71,7 +71,7 @@ public class Dec18_Cowpatibility2 {
         compat.put(mk, ++count);
       }
     }
-    
+
     // get number of compatible pairs using inclusion-exclusion
     long[] inc_ex = {0, 1, -1, 1, -1, 1};
     long total = 1L * N * (N-1) / 2;

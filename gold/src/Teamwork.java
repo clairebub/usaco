@@ -10,7 +10,7 @@ public class Teamwork {
     public static void main(String[] args) throws Exception {
         long start_time = System.currentTimeMillis();
 //        Scanner fin = new Scanner(new File("teamwork.in"));
-        Scanner fin = new Scanner(new File("teamwork_gold_dec18/7.in"));
+        Scanner fin = new Scanner(new File("data/teamwork_gold_dec18/7.in"));
         String line = fin.nextLine();
         StringTokenizer st = new StringTokenizer(line);
         N = Integer.parseInt(st.nextToken());
