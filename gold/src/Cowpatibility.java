@@ -1,7 +1,4 @@
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
-
 import java.io.*;
-import java.math.MathContext;
 import java.util.*;
 
 public class Cowpatibility {
@@ -95,7 +92,7 @@ public class Cowpatibility {
 
     public static void main(String[] args) throws Exception {
         long start_time = System.currentTimeMillis();
-        Scanner fin = new Scanner(new File("cowpatibility_gold_dec18/10.in"));
+        Scanner fin = new Scanner(new File("data/cowpatibility_gold_dec18/10.in"));
         String line = fin.nextLine();
         StringTokenizer st = new StringTokenizer(line);
         N = Integer.parseInt(st.nextToken());
@@ -110,21 +107,18 @@ public class Cowpatibility {
                 FLAVORS[i][j] = f;
             }
             Arrays.sort(FLAVORS[i]);
-//            System.out.println(Arrays.toString(FLAVORS[i]));
             for (int j = 1; j <=31; j++) {
                 MatchKey mk = genSubSet(FLAVORS[i], j);
                 int count = compat.containsKey(mk) ? compat.get(mk) : 0;
                 compat.put(mk, count+1);
             }
         }
+        System.out.println("compat size: " + compat.size());
         int[] inc_exc = {1, -1, 1, -1, 1};
         long num_overlap = 0;
         for (MatchKey mk : compat.keySet()) {
             int n_matched_flavors = mk.n;
             long n_matched_people = compat.get(mk);
-            if (n_matched_flavors == 3 && n_matched_people > 1) {
-//                System.out.println("mk: " + mk + ", " + n_matched_people);
-            }
             n_matched_people = inc_exc[n_matched_flavors - 1] * n_matched_people * (n_matched_people - 1) / 2;
             num_overlap += n_matched_people;
         }

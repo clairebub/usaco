@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Sleepy {
+public class Feb19_Sleepy {
   // 1-based index
   static class FenwickTree {
     int[] array;

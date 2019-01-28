@@ -1,22 +1,21 @@
 import java.io.*;
 import java.util.*;
 
-public class Dining3 {
+public class Dec18_Dining3 {
 
   static int N, M, K;
   static HashMap<Integer, HashMap<Integer, Integer>> edges;
   static HashMap<Integer, Integer> hays;
 
   public static void main(String[] args) throws Exception {
-/*
     for (int i = 1; i <= 10; i++) {
       long t1 = System.currentTimeMillis();
       run(i);
       long t2 = System.currentTimeMillis();
       System.out.println("i=" + i + ", ts=" + (t2-t1) + " ms");
     }
-    */
-    run(0);
+
+   // run(0);
 
   }
 
@@ -80,6 +79,7 @@ public class Dining3 {
     pw.flush();
     pw.close();
   }
+
 
   static void dijkstra(int src, HashMap<Integer, Integer> dist) {
     PriorityQueue<Integer> front = new PriorityQueue<>(N, new Comparator<Integer>() {
