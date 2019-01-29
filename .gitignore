@@ -1,5 +1,6 @@
 .DS_Store
 xcuserdata
+gold/out
 a.out
 a.out.*
 *.class
