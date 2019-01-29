@@ -1,11 +1,12 @@
 .DS_Store
-xcuserdata
-gold/out
+.idea
 a.out
 a.out.*
 *.class
-out
-.idea
+*.iml
+*.out
 gold/.idea/workspace.xml
 gold/.idea/tasks.xml
-*.iml
+gold/out
+out
+xcuserdata
