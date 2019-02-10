@@ -5,7 +5,45 @@ public class Open18_Sort {
   static int N;
   static int cows[];
 
+  // a fenwick tree to handle the prefix sum for array of 'size'
+  // That array is 0-based
+  static class FenwickTree {
+    int size;
+    int[] array;
+
+    public FenwickTree(int size) {
+      this.size = size;
+      array = new int[this.size + 1];  // the entry.0 is not used
+      Arrays.fill(array, 0);
+    }
+
+    // index is inclusive
+    public int prefix_sum(int index) {
+      int sum = 0;
+      while (index > 0) {
+        sum += array[index];
+        index -= index & (-index);
+      }
+      return sum;
+    }
+
+    public void increment(int index) {
+      update(index, array[index] + 1);
+    }
+
+    public void update(int index, int v) {
+      if (index <= 0) {
+        throw new IllegalArgumentException("Illegal index: " + index);
+      }
+      while (index <= this.size) {
+        array[index] += v;
+        index += index & (-index);
+      }
+    }
+  }
+
   public static void main(String[] args) throws Exception {
+    FenwickTree ft = new FenwickTree(10);
     run(args.length == 0 ? 0 : Integer.parseInt(args[0]));
   }
 
@@ -21,44 +59,50 @@ public class Open18_Sort {
 
     StringTokenizer st = new StringTokenizer(br.readLine());
     N = Integer.parseInt(st.nextToken());
-    cows = new int[N];
-    for (int i = 0; i < N; i++) {
+    cows = new int[N+1];
+    for (int i = 1; i <= N; i++) {
       st = new StringTokenizer(br.readLine());
       cows[i] = Integer.parseInt(st.nextToken());
     }
-    int moo = do_sort(cows);
-    pw.println(moo);
+
+    TreeMap<Integer, Integer> sortedCows = new TreeMap<>(new Comparator<Integer>() {
+      @Override
+      public int compare(Integer o1, Integer o2) {
+        if (cows[o1.intValue()] < cows[o2.intValue()]) {
+          return -1;
+        } else if (cows[o1.intValue()] > cows[o2.intValue()]) {
+          return 1;
+        } else {
+          if (o1 < o2) {
+            return -1;
+          } else if (o1 > o2) {
+            return 1;
+          } else {
+            return 0;
+          }
+        }
+      }
+    });
+
+    for (int i = 1; i <= N; i++) {
+      sortedCows.put(i, cows[i]);
+    }
+
+    FenwickTree ft = new FenwickTree(N);
+    int answer = 1;
+    int right_pos = 0;
+    for (Map.Entry<Integer, Integer> entry : sortedCows.entrySet()) {
+      right_pos++;
+      int wrong_pos = entry.getKey();
+      ft.increment(wrong_pos);
+      int num_mis_placed = right_pos - ft.prefix_sum(right_pos);
+      answer = Math.max(answer, num_mis_placed);
+    }
+
+    System.out.println(answer);
+    pw.println(answer);
     pw.flush();
     pw.close();
-//    System.out.println(moo);
   }
 
-  static int do_sort(int[] A) {
-    boolean sorted = false;
-    int moo = 0;
-    while (! sorted) {
-      sorted = true;
-      moo++;
-      for (int i = 0; i <= N-2; i++) {
-        if (A[i + 1] < A[i]) {
-          int tmp = A[i + 1];
-          A[i + 1] = A[i];
-          A[i] = tmp;
-        }
-      }
-      for (int i = N-2; i >= 0; i--) {
-        if (A[i + 1] < A[i]) {
-          int tmp = A[i + 1];
-          A[i + 1] = A[i];
-          A[i] = tmp;
-        }
-      }
-      for (int i = 0; i <= N-2; i++) {
-        if (A[i + 1] < A[i]) {
-          sorted = false;
-        }
-      }
-    }
-    return moo;
-  }
 }

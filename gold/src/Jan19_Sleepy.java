@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Feb19_Sleepy {
+public class Jan19_Sleepy {
   // 1-based index
   static class FenwickTree {
     int[] array;
@@ -30,13 +30,7 @@ public class Feb19_Sleepy {
   }
 
   public static void main(String[] args) throws Exception {
-    for (int i = 1; i <= 15; i++) {
-      long t1 = System.currentTimeMillis();
-      run(i);
-      long t2 = System.currentTimeMillis();
-      System.out.println("i=" + i + ", ts=" + (t2-t1) + " ms");
-
-    }
+    run(args.length == 0 ? 0 : Integer.parseInt(args[0]));
   }
   static void run(int ii) throws Exception {
     String fname = String.format("/tmp/sleepy_gold_jan19/%d.in", ii);

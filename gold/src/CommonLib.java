@@ -2,6 +2,44 @@ import java.util.*;
 
 public class CommonLib {
 
+  // a Fenwick tree to handle the prefix sum for array of 'size'
+  // For usage see Open18_Sort
+  // That array is 0-based
+  static class FenwickTree {
+    int size;
+    int[] array;
+
+    public FenwickTree(int size) {
+      this.size = size;
+      array = new int[this.size + 1];  // the entry.0 is not used
+      Arrays.fill(array, 0);
+    }
+
+    // index is inclusive
+    public int prefix_sum(int index) {
+      int sum = 0;
+      while (index > 0) {
+        sum += array[index];
+        index -= index & (-index);
+      }
+      return sum;
+    }
+
+    public void increment(int index) {
+      update(index, array[index] + 1);
+    }
+
+    public void update(int index, int v) {
+      if (index <= 0) {
+        throw new IllegalArgumentException("Illegal index: " + index);
+      }
+      while (index <= this.size) {
+        array[index] += v;
+        index += index & (-index);
+      }
+    }
+  }
+
   static class MatchKey {
     int n;
     int[] flavors;
@@ -40,6 +78,7 @@ public class CommonLib {
     }
   }
 
+  // given a list of something, generating the subset systematically
   static MatchKey gen_subset(int[] flavors, int index) {
     MatchKey mk = new MatchKey(flavors.length);
     mk.n = 0;
@@ -52,6 +91,7 @@ public class CommonLib {
     return mk;
   }
 
+  // doing network distance thing
   static void dijkstra(HashMap<Integer, HashMap<Integer, Integer>> edges, int src, HashMap<Integer, Integer> dist) {
     final int PQ_CAPACITY = 5000;
     PriorityQueue<Integer> front = new PriorityQueue<>(PQ_CAPACITY, new Comparator<Integer>() {

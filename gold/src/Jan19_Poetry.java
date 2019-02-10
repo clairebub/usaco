@@ -1,18 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-public class Feb19_Poetry {
+public class Jan19_Poetry {
     static long[] dp;
 
     public static void main(String[] args) throws Exception {
-        for (int i = 1; i <= 15; i++) {
-            long t1 = System.currentTimeMillis();
-            System.out.println("i=" + i);
-            run(i);
-            long t2 = System.currentTimeMillis();
-            System.out.println("ts=" + (t2-t1) + " ms");
-        }
-//        run(1);
+        run(args.length == 0 ? 0 : Integer.parseInt(args[0]));
     }
     public static void run(int ii) throws Exception {
 

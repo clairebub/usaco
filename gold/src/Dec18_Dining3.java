@@ -8,15 +8,7 @@ public class Dec18_Dining3 {
   static HashMap<Integer, Integer> hays;
 
   public static void main(String[] args) throws Exception {
-    for (int i = 1; i <= 10; i++) {
-      long t1 = System.currentTimeMillis();
-      run(i);
-      long t2 = System.currentTimeMillis();
-      System.out.println("i=" + i + ", ts=" + (t2-t1) + " ms");
-    }
-
-   // run(0);
-
+    run(args.length == 0 ? 0 : Integer.parseInt(args[0]));
   }
 
   static void run(int ii)throws Exception {
