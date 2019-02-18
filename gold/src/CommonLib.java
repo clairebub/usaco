@@ -2,6 +2,10 @@ import java.util.*;
 
 public class CommonLib {
 
+  static class TreeNode {
+
+  }
+
   // a Fenwick tree to handle the prefix sum for array of 'size'
   // For usage see Open18_Sort
   // That array is 0-based
