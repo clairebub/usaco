@@ -44,15 +44,12 @@ public class Jan19_Poetry {
             class_2_words.get(cls).add(i);
         }
 
-        // num_of_ways2(K_syllables, syllable_wc);
-        // ways for a line to end with a class
         dp = new long[K_syllables+1];
         Arrays.fill(dp, -1);
         HashMap<Integer, Long> class_ways = new HashMap<>();
         for (int cls : class_2_words.keySet()) {
             long sum = 0;
             for (int w : class_2_words.get(cls)) {
-//                sum += dp[K_syllables - word_syllables[w]];
                 long a = num_of_ways2(K_syllables - word_syllables[w], syllable_wc);
                 sum = (sum + a) % 1000000007;
                 check_overflow("67", sum);
@@ -92,6 +89,15 @@ public class Jan19_Poetry {
         pw.close();
     }
 
+    static long num_of_ways(int K, HashMap<Integer, Integer> syllable_length_to_count) {
+        if (dp[K] >= 0) {
+            return dp[K];
+        }
+
+
+        return dp[K];
+    }
+
     static long num_of_ways2(int K, HashMap<Integer, Integer> syllable_length_to_count) {
         if (dp[K] >= 0) {
             return dp[K];
@@ -113,27 +119,7 @@ public class Jan19_Poetry {
         }
         return dp[K];
     }
-/*
-    // number of unique ways for K syllables
-    static long num_of_ways(int num_s, HashMap<Integer, Integer> syllable_length_to_count) {
-        if (dp[num_s] >= 0) {
-            return dp[num_s];
-        }
-        long sum = 0;
-        for (int len : syllable_length_to_count.keySet()) {
-            int c = syllable_length_to_count.get(len);
-            if (len == num_s) {
-                sum += c;
-            } else if (len < num_s) {
-                long a = c * num_of_ways(num_s - len, syllable_length_to_count) % 1000000007;
-                sum = (sum + a) % 1000000007;
-            }
-            sum = sum % 1000000007;
-        }
-        dp[num_s] = sum;
-        return dp[num_s];
-    }
-*/
+
     static void check_overflow(String marker, long n) {
         if (n < 0) {
             System.out.println(marker + " overflow: " + n);
