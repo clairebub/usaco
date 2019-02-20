@@ -2,8 +2,48 @@ import java.util.*;
 
 public class CommonLib {
 
-  static class TreeNode {
+  // Union-find for graph node with index 1 to N
+  static class UnionFind {
+    int parents[];
+    int sz[];
 
+    public UnionFind(int n) {
+      parents = new int[n+1];
+      sz = new int[n+1];
+
+      for (int i = 1; i <= n; i++) {
+        parents[i] = i;
+        sz[i] = 1;
+      }
+    }
+
+    int find(int i) {
+      return parents[i] == i ? i : (parents[i] = find(parents[i]));
+    }
+
+    void merge(int i, int j) {
+      int fi = find(i);
+      int fj = find(j);
+      sz[fi] += sz[fj];
+      parents[fj] = fi;
+    }
+
+    int sizeOf(int i) {
+      return sz[find(i)];
+    }
+  }
+
+  static class Edge implements Comparable<Edge> {
+    int a, b, w;
+    public Edge(int a, int b, int w) {
+      this.a = a;
+      this.b = b;
+      this.w = w;
+    }
+    @Override
+    public int compareTo(Edge o) {
+      return this.w - o.w;
+    }
   }
 
   // a Fenwick tree to handle the prefix sum for array of 'size'
@@ -150,10 +190,13 @@ public class CommonLib {
     }
 
     for (int i = 1; i <= n_items; i++) {
+      // use the first i items only, adding the ith item
       for (int j = 1; j <= W; j++) {
-        if(w[i] > j) {
+        // for the total weight up to j
+        if(w[i] > j) { // this is too big, doesn't fit
           dp[i][j] = dp[i-1][j];
         } else {
+          // it fits, now the decision is take it or not take it
           dp[i][j] = Math.max(dp[i-1][j], v[i] + dp[i-1][j-w[i]]);
         }
       }
