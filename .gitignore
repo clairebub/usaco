@@ -3,7 +3,6 @@
 a.out
 a.out.*
 *.class
-*.iml
 *.out
 gold/.idea/workspace.xml
 gold/.idea/tasks.xml
